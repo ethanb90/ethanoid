@@ -31,23 +31,24 @@
           const model = gltf.scene;
           model.scale.set(0.2, 0.2, 0.2); // adjust as needed
           scene.add(model);
+        });
       
           // Add positional audio to the model
-          const listener = new THREE.AudioListener();
-          camera.add(listener);
+        //   const listener = new THREE.AudioListener();
+        //   camera.add(listener);
       
-          const sound = new THREE.PositionalAudio(listener);
-          const audioLoader = new THREE.AudioLoader();
-          audioLoader.load('./ben.mp3', (buffer) => {
-            sound.setBuffer(buffer);
-            sound.setRefDistance(1);
-            sound.setLoop(true);
-            sound.setVolume(1);
-            sound.play();
-          });
+        //   const sound = new THREE.PositionalAudio(listener);
+        //   const audioLoader = new THREE.AudioLoader();
+        //   audioLoader.load('./ben.mp3', (buffer) => {
+        //     sound.setBuffer(buffer);
+        //     sound.setRefDistance(1);
+        //     sound.setLoop(true);
+        //     sound.setVolume(1);
+        //     sound.play();
+        //   });
       
-          model.add(sound); // attach audio to the model
-        });
+        //   model.add(sound); // attach audio to the model
+        // });
       
         // Animation/render loop
         renderer.setAnimationLoop(() => {
