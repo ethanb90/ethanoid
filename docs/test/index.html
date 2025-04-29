@@ -38,7 +38,7 @@
       
           const sound = new THREE.PositionalAudio(listener);
           const audioLoader = new THREE.AudioLoader();
-          audioLoader.load('./ben.wav', (buffer) => {
+          audioLoader.load('./ben.mp3', (buffer) => {
             sound.setBuffer(buffer);
             sound.setRefDistance(1);
             sound.setLoop(true);
